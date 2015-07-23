@@ -1,5 +1,6 @@
 ---
 title: ES6 and You (the New-ish Engineer) Let (the Right One In)
+tags: JavaScript, es6
 ---
 
 Another week (actually, solo week at [Hack Reactor](http://www.hackreactor.com)), another ES6 post. `let` statements are among the most commonly adopted ES6 features seen in the wild so far, and they are already compatible with most modern browsers, so it's worth a quick look into the Power Of Scoping and when and where to use `let`.
@@ -15,7 +16,7 @@ In previous ECMAScript standards, it was nigh impossible to scope variables loca
     for (var i = 0; i < 10; i++) {
       var foo = 7;
     }
-    
+
     console.log(foo); //but what does this log?
 
   }
@@ -23,7 +24,7 @@ In previous ECMAScript standards, it was nigh impossible to scope variables loca
 
 `var` ignores block scope, and the program will log the number 7.  `let` will scope `foo` properly within the block, and log `undefined` when looked up in this context.
 
-Same goes to `if` blocks: 
+Same goes to `if` blocks:
 
 ```
   if (x > 0) {
@@ -45,9 +46,9 @@ Another special trait of `let`: when used, its declaration is **not** [hoisted](
 
   console.log(bar);
   let bar = "This does not! ERROR, ERROR, ERROR."
-``` 
+```
 
-Irregardless, why your program would not declare variables at the top of the scope beats me. 
+Irregardless, why your program would not declare variables at the top of the scope beats me.
 
 ### When in Doubt, `let` It Be
 
@@ -57,7 +58,7 @@ As it's in your program's best interest to (usually!) scope your variables prope
 
 * Are you explicitly (and perhaps needlessly) declaring a variable within a block statement that will be used in another part of your scope? **use `var`.**
 
-* Are you for sure *for sure for sure* never going to move declaration of this variable to another scope? **you can use `var` at the top of function definitions.** 
+* Are you for sure *for sure for sure* never going to move declaration of this variable to another scope? **you can use `var` at the top of function definitions.**
 
 * None of these? **just use `let`.**
 
@@ -72,7 +73,7 @@ One other nifty declaration coming to browsers is `const`. It's exactly as it so
 
 In this case, `thePurpleOne` is now reserved in the local namespace. No functions or variables can use that name.
 
-There are a few quirks with constants, however: 
+There are a few quirks with constants, however:
 
 ```
   const sillyObject = {foo: "bar"};
@@ -84,5 +85,3 @@ There are a few quirks with constants, however:
 Although the object is constant, it's properties are not. So be careful out there, children. Nevertheless, `const` should be a great bodyguard for unchangeable values in your program.
 
 Any other thoughts about `let` and `const`? Please share!
-
-

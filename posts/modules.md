@@ -1,5 +1,6 @@
 ---
 title: ES6 and You (the New-ish Engineer) It's a Modules World, We're Just Living In It
+tags: Javascript, es6
 ---
 
 Give the ECMA committee props—they did a great job of listening to the community by simply opening their eyes to the best practices and newest tools in Javascript World. I've written before about how Coffeescript syntax/concepts are [creeping into some features](http://blog.chrisclayman.com/es6-and-you-the-new-ish-engineer-rest-and-default-parameters/). Modules, which (through CommonJs and AMD standards) changed the way many developers structure their code, **have their own implementation in ES6**. If you are new-ish to modules, [here is a good technical introduction](http://addyosmani.com/writing-modular-js/), and [the argument for modularity](http://eloquentjavascript.net/1st_edition/chapter9.html), a tool found in almost every language besides Javascript.
@@ -51,7 +52,7 @@ import {soLong as peaceOut} from "./greetings.js"
 peaceOut(); // logs "Goodnight, moon."
 ```
 
-As you can see, I've aliased the function goodnight twice: once upon export from greetings.js, and again during import. 
+As you can see, I've aliased the function goodnight twice: once upon export from greetings.js, and again during import.
 
 You can, obviously, also just export an entire library object with `export * as (ALIAS) from (MODULE PATH)`, which would allow for syntax you are likely used to seeing through CommonJS modules.
 
@@ -66,7 +67,3 @@ Because CJS and AMD were created **precisely to address the lack of modules in J
 ES6 modules, with their flexibility and with the promise of [module loaders](https://people.mozilla.org/~jorendorff/js-loaders/Loader.html), should close the gaps that have been bridged adequately (but not perfectly) by CJS and AMD standards, and should give the Javascript community one unified standard for modularity. Because, as you know, the Javascript community never fragments and picks sides. ;)
 
 Any thoughts about modules in ES6? Please share below.
-
-
-
-

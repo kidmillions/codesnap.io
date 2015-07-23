@@ -1,5 +1,6 @@
 ---
 title: ES6 and You (the New-ish Engineer) Superclasses and Subclasses
+tags: Javascript, ES6
 ---
 
 By now, most everyone who works with Javascript knows that there are some **truly wacko** upcoming changes to ECMAScript with the approval of the ES6 spec. That wacko-ness is most apparent to those of us who have been set in our Javascriptisms for our entire programming life. We drop our jaws at the sight of the [latest spec draft](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts). But all the hullabaloo fails to see that Javascript is **finally** (albeit slowly) becoming a better programming language. Developers would be remiss not to take advantage of this.
@@ -101,5 +102,3 @@ class PurpleRain extends Rain {
 The `super` keyword is accessible by the subclass,  and allows us to easily extend methods, which can lead to all sorts of fun.
 
 Got any other great uses for ES6 classes? Definitely share, or [shoot me a tweet](http://www.twitter.com/chrisclayman).
-
-

@@ -1,5 +1,6 @@
 ---
 title: Rust and FFI
+tags: rust, Javascript, node.js
 ---
 
 In the little time I've had between mad coding sessions at Hack Reactor, where we are in the midst of thesis projects, I've tried to pick up [Rust](https://doc.rust-lang.org) as a second language, often with competing frustration/excitement.
@@ -42,7 +43,7 @@ lib.main();
 
 ```
 
-Note that `'void'` is the return type for the shared object function, and the array is for arguments passed into the function. 
+Note that `'void'` is the return type for the shared object function, and the array is for arguments passed into the function.
 
 I'm blown away by the simplicity of it all, and I plan to incorporate Rust into some of the high-maintenance aspects of my thesis project.
 

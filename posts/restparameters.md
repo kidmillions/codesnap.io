@@ -1,8 +1,9 @@
 ---
 title: ES6 and You (the New-ish Engineer) Rest and Default Parameters
+tags: Javascript, es6
 ---
 
-Be merry, and rejoice! The ECMAScript 2015 spec has [passed muster](http://www.infoq.com/news/2015/06/ecmascript-2015-es6), and Javascript is well on its way to ~annual iteration and improvement. In the spirit of the season, here's another great aspect of ES6 that pumps me up. 
+Be merry, and rejoice! The ECMAScript 2015 spec has [passed muster](http://www.infoq.com/news/2015/06/ecmascript-2015-es6), and Javascript is well on its way to ~annual iteration and improvement. In the spirit of the season, here's another great aspect of ES6 that pumps me up.
 
 Before talking about rest parameters, though, I also want to signal boost the [traceur grunt task](https://github.com/aaronfrost/grunt-traceur) to compile your ES6 code properly while we meanwhile wait for browsers to fully integrate everything.
 
@@ -44,16 +45,16 @@ We can put a rest parameter as the last parameter in a list, as well:
 var checkOut(first, second, ...rest) {
   console.log(first);
   console.log(second);
-  console.log(rest); //will log array of arguments passed after first and second   
+  console.log(rest); //will log array of arguments passed after first and second
 };
 
 ```
 
-No longer do we need to access `arguments.length` to splice any remaining arguments out. They are right there for the taking. 
+No longer do we need to access `arguments.length` to splice any remaining arguments out. They are right there for the taking.
 
 ### Default Parameters Are Your Friend
 
-Default parameters are self-explanatory: 
+Default parameters are self-explanatory:
 ```
 var myName = function(name='Prince') {
   return 'My name is ' + name + '.';
