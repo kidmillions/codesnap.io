@@ -63,7 +63,7 @@ So, you have great flexibility during your exports. You can explicitly export a 
 
 ### Ok, So Why Not Just Continue With CJS and/or AMD?
 
-Because CJS and AMD were created **precisely to address the lack of modules in Javascript—features that are now arriving natively.** CommonJS has been great for server-side code, and AMD works better in browsers, but their syntax never played nice outside of their home environments–the module.exports object in CJS was difficult in client-side code, and AMD's `define()` seems restrictive to some.
+Because CJS and AMD were created **precisely to address the lack of modules in Javascript–features that are now arriving natively.** CommonJS has been great for server-side code, and AMD works better in browsers, but their syntax never played nice outside of their home environments–the module.exports object in CJS was difficult in client-side code, and AMD's `define()` seems restrictive to some.
 
 ES6 modules, with their flexibility and with the promise of [module loaders](https://people.mozilla.org/~jorendorff/js-loaders/Loader.html), should close the gaps that have been bridged adequately (but not perfectly) by CJS and AMD standards, and should give the Javascript community one unified standard for modularity. Because, as you know, the Javascript community never fragments and picks sides. ;)
 
