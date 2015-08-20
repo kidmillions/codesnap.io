@@ -8,6 +8,7 @@ Give the ECMA committee props—they did a great job of listening to the communi
 The hardest part for those who are used to CommonJS / RequireJS / WhateverJS is to determine where ES6 modules should fit into the ecosystem. The [ECMA people](http://www.ecma-international.org/memento/TC39.htm) intend for ES6 modules to be a sort of compromise between the standards. So, where will this feature find some elbow room?
 
 ### The power of ES6 Modules
+###The power of ES6 Modules
 
 Let's put together a nice module file:
 
